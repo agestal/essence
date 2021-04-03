@@ -31,9 +31,9 @@
                 <div class="u-layout-row">
                   <div class="u-align-center u-container-style u-layout-cell u-left-cell u-palette-1-light-2 u-size-15 u-size-30-md u-layout-cell-1">
                     <div class="u-container-layout u-valign-middle u-container-layout-1">
-                      <h3 class="u-text u-text-1">A Unique Place</h3>
+                      <h3 class="u-text u-text-1">Servicios de Belleza</h3>
                       <div class="u-border-3 u-border-black u-line u-line-horizontal u-line-1"></div>
-                      <p class="u-text u-text-2">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus&nbsp;</p>
+                      <p class="u-text u-text-2">Porque cuando una esta guapa, no hay límites que nos superen!</p>
                     </div>
                   </div>
                   <div class="u-align-left u-container-style u-image u-layout-cell u-size-15 u-size-30-md u-image-1" src="">
@@ -41,9 +41,9 @@
                   </div>
                   <div class="u-align-center u-black u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-3">
                     <div class="u-container-layout u-valign-middle u-container-layout-3">
-                      <h3 class="u-text u-text-3">Body Care</h3>
+                      <h3 class="u-text u-text-3">Limpia tu piel</h3>
                       <div class="u-border-3 u-border-white u-line u-line-horizontal u-line-2"></div>
-                      <p class="u-text u-text-4">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus&nbsp;</p>
+                      <p class="u-text u-text-4">Siéntete limpia y presume de una piel brillante y sana.</p>
                     </div>
                   </div>
                   <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-15 u-size-30-md u-image-2" src="">
@@ -58,9 +58,9 @@
                   </div>
                   <div class="u-align-center u-container-style u-layout-cell u-size-15 u-size-30-md u-white u-layout-cell-6">
                     <div class="u-container-layout u-valign-middle u-container-layout-6">
-                      <h3 class="u-text u-text-5">Special Offers</h3>
+                      <h3 class="u-text u-text-5">Un evento?</h3>
                       <div class="u-border-3 u-border-black u-line u-line-horizontal u-line-3"></div>
-                      <p class="u-text u-text-6">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus&nbsp;</p>
+                      <p class="u-text u-text-6">Tranquila ni tu ni tu cartera tenéis por qué sufrir.</p>
                     </div>
                   </div>
                   <div class="u-align-left u-container-style u-image u-layout-cell u-size-15 u-size-30-md u-image-4" src="">
@@ -68,9 +68,9 @@
                   </div>
                   <div class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-container-style u-layout-cell u-palette-1-base u-right-cell u-size-15 u-size-30-md u-layout-cell-8">
                     <div class="u-container-layout u-valign-middle u-container-layout-8">
-                      <h3 class="u-align-center-md u-text u-text-7">Beauty Salon</h3>
+                      <h3 class="u-align-center-md u-text u-text-7">Pies y Manos</h3>
                       <div class="u-border-3 u-border-black u-line u-line-horizontal u-line-4"></div>
-                      <p class="u-text u-text-8">Integer diam quam, ultrices non lobortis ut, ultricies at libero phasellus luctus&nbsp;</p>
+                      <p class="u-text u-text-8">No hay nada más bonito que unas manos y unos pies radiates</p>
                     </div>
                   </div>
                 </div>
@@ -94,9 +94,9 @@
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
                 <div class="u-container-layout u-valign-middle u-container-layout-2">
-                  <h1 class="u-text u-text-1">Advanced Skincare</h1>
+                  <h1 class="u-text u-text-1">Belleza o Cartera?</h1>
                   <div class="u-border-3 u-border-black u-line u-line-horizontal u-line-1"></div>
-                  <p class="u-text u-text-2">Our highly qualified therapists will carry out an in depth analysis of your skins needs and create the best programme of treatment for you.</p>
+                  <p class="u-text u-text-2"> A pesar de lo que muchas puedan pensar, la belleza y la cartera no tienen por qué estar reñidas y nosotros tenemos la fórmula secreta.</p>
                   <a href="#" class="u-link u-link-1">learn more</a>
                 </div>
               </div>
