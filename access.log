@@ -1,0 +1,2 @@
+127.0.0.1 - - [03/Apr/2021:11:34:57 +0200] "GET / HTTP/1.1" 200 6298 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+127.0.0.1 - - [03/Apr/2021:11:34:58 +0200] "GET /favicon.ico HTTP/1.1" 200 295 "http://app.peluqueria.local/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
