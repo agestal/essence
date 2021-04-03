@@ -770,3 +770,6 @@
 127.0.0.1 - - [03/Apr/2021:16:19:38 +0200] "POST /whatsap.php HTTP/1.1" 404 6804 "http://app.peluqueria.local/siguiente_debug" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
 127.0.0.1 - - [03/Apr/2021:16:22:52 +0200] "GET /siguiente_debug HTTP/1.1" 200 1456 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
 127.0.0.1 - - [03/Apr/2021:16:22:53 +0200] "GET /favicon.ico HTTP/1.1" 200 295 "http://app.peluqueria.local/siguiente_debug" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+127.0.0.1 - - [03/Apr/2021:16:31:04 +0200] "GET / HTTP/1.1" 200 5621 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+127.0.0.1 - - [03/Apr/2021:16:31:04 +0200] "GET /nicepage.js HTTP/1.1" 200 49482 "http://app.peluqueria.local/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
+127.0.0.1 - - [03/Apr/2021:16:31:04 +0200] "GET /nicepage.css HTTP/1.1" 200 90936 "http://app.peluqueria.local/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36"
