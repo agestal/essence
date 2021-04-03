@@ -14,7 +14,7 @@
                 <p class="u-large-text u-text u-text-variant u-text-3">Deja que nosotros te cuidemos, estarás en buenas manos.</p>
                 
                 </p>
-                <a href="#" class="u-btn u-button-style u-palette-4-base u-btn-2">Pedir Vez!</a>
+                <a href="{{url('vez')}}" class="u-btn u-button-style u-palette-4-base u-btn-2">Pedir Vez!</a>
               </div>
             </div>
           </div>

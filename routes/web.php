@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','HomeController@index');
-Route::get('/vez','HomeController@pedirvez');
+Route::get('vez','HomeController@pedirvez');
+Route::post('pedirvez','VecesController@pedirvez');
+Route::get('siguiente_debug','VecesController@siguiente_debug');
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
