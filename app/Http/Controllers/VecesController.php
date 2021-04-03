@@ -38,9 +38,9 @@ class VecesController extends Controller
             return 0;
         }
     }
-    public function whatsapp()
+    public function whatsapp($id)
     {
-
+        
     }
     public function siguiente_debug()
     {

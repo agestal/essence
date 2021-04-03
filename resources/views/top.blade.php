@@ -22,7 +22,7 @@
           </div>
           <div class="u-nav-container">
             <ul  class="u-nav u-spacing-25 u-unstyled">
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Page-2.html" style="padding: 8px 0px;">Page 2</a></li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url('siguiente_debug') }}" style="padding: 8px 0px;"> Siguiente </a></li>
             </ul>
           </div>
           <div class="u-nav-container-collapse">
