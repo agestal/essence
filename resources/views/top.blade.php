@@ -22,15 +22,20 @@
           </div>
           <div class="u-nav-container">
             <ul  class="u-nav u-spacing-25 u-unstyled">
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url('siguiente_debug') }}" style="padding: 8px 0px;"> Siguiente </a></li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 8px 0px;"> Opcion 1 </a></li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 8px 0px;"> Opcion 2 </a></li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 8px 0px;"> Opcion 3 </a></li>
             </ul>
           </div>
           <div class="u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url('siguiente_debug') }}" style="padding: 8px 0px;">Siguiente</a>
-</li></ul>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 8px 0px;"> Opcion 1 </a></li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 8px 0px;"> Opcion 2 </a></li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 8px 0px;"> Opcion 3 </a></li>
+                </ul>
               </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
