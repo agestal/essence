@@ -22,7 +22,12 @@ class VecesController extends Controller
     }
     public function pedirvezapi(Request $request)
     {
-        var_dump($request);
+        $postdata = file_get_contents("php://input");
+        if (isset($postdata)) {
+         $request = json_decode($postdata);
+         $request->recibido = 'OK';
+         echo json_encode($request);
+        }
         $nombre=$request->nombre;
         $tlf = $request->tlf;
         $mail = $request->email;
