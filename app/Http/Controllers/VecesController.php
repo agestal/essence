@@ -20,6 +20,21 @@ class VecesController extends Controller
         $v->save();
         return redirect()->route('/');
     }
+    public function pedirvezapi(Request $request)
+    {
+        dd($request);
+        $nombre=$request->nombre;
+        $tlf = $request->tlf;
+        $mail = $request->email;
+        $v = new Veces();
+        $v->nombre = $nombre;
+        $v->tlf = $tlf;
+        $v->email = $mail;
+        $v->ip = Veces::verip();
+        $v->gestionada = false;
+        $v->save();
+        return redirect()->route('/');
+    }
     public function siguiente(Request $request)
     {
         $hayveces = Veces::where('gestionada',false)->count();
