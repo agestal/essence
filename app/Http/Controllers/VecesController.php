@@ -22,10 +22,9 @@ class VecesController extends Controller
     }
     public function pedirvezapi(Request $request)
     {
-        $data = $request->data;
-        $nombre=$data->nombre;
-        $tlf = $data->tlf;
-        $mail = $data->email;
+        $nombre=$request->nombre;
+        $tlf = $request->tlf;
+        $mail = $request->email;
         $v = new Veces();
         $v->nombre = $nombre;
         $v->tlf = $tlf;
