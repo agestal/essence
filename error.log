@@ -1,0 +1,15 @@
+[Fri Apr 09 17:41:08.108025 2021] [authz_core:error] [pid 8453:tid 139969988724480] [client 127.0.0.1:51390] AH01630: client denied by server configuration: /mnt/c/www/pelqueria
+[Fri Apr 09 17:41:19.753058 2021] [authz_core:error] [pid 8451:tid 139969988724480] [client 127.0.0.1:51405] AH01630: client denied by server configuration: /mnt/c/www/pelqueria
+[Fri Apr 09 17:41:19.796349 2021] [authz_core:error] [pid 8451:tid 139969980204800] [client 127.0.0.1:51405] AH01630: client denied by server configuration: /mnt/c/www/pelqueria, referer: http://app.peluqueria.local/
+[Fri Apr 09 17:48:10.538483 2021] [authz_core:error] [pid 8451:tid 139969754433280] [client 127.0.0.1:51668] AH01630: client denied by server configuration: /mnt/c/www/pelqueria
+[Fri Apr 09 17:48:10.551458 2021] [authz_core:error] [pid 8451:tid 139969745979136] [client 127.0.0.1:51668] AH01630: client denied by server configuration: /mnt/c/www/pelqueria, referer: http://app.peluqueria.local/
+[Fri Apr 09 17:48:12.946002 2021] [authz_core:error] [pid 8451:tid 139969737524992] [client 127.0.0.1:51668] AH01630: client denied by server configuration: /mnt/c/www/pelqueria
+[Fri Apr 09 17:48:12.956878 2021] [authz_core:error] [pid 8451:tid 139969729070848] [client 127.0.0.1:51668] AH01630: client denied by server configuration: /mnt/c/www/pelqueria, referer: http://app.peluqueria.local/
+[Fri Apr 09 17:48:13.514034 2021] [authz_core:error] [pid 8451:tid 139969720616704] [client 127.0.0.1:51668] AH01630: client denied by server configuration: /mnt/c/www/pelqueria
+[Fri Apr 09 17:48:13.525659 2021] [authz_core:error] [pid 8451:tid 139969712162560] [client 127.0.0.1:51668] AH01630: client denied by server configuration: /mnt/c/www/pelqueria, referer: http://app.peluqueria.local/
+[Fri Apr 09 17:54:23.178464 2021] [authz_core:error] [pid 8453:tid 139969863288576] [client 127.0.0.1:52033] AH01630: client denied by server configuration: /mnt/c/www/pelqueria
+[Fri Apr 09 17:54:23.189528 2021] [authz_core:error] [pid 8453:tid 139969854834432] [client 127.0.0.1:52033] AH01630: client denied by server configuration: /mnt/c/www/pelqueria, referer: http://app.peluqueria.local/
+[Fri Apr 09 17:54:25.226058 2021] [authz_core:error] [pid 8453:tid 139969846380288] [client 127.0.0.1:52033] AH01630: client denied by server configuration: /mnt/c/www/pelqueria
+[Fri Apr 09 17:54:25.235154 2021] [authz_core:error] [pid 8453:tid 139969293125376] [client 127.0.0.1:52033] AH01630: client denied by server configuration: /mnt/c/www/pelqueria, referer: http://app.peluqueria.local/
+[Fri Apr 09 18:10:23.552028 2021] [authz_core:error] [pid 716] [client 127.0.0.1:56178] AH01630: client denied by server configuration: /mnt/c/www/pelqueria
+[Fri Apr 09 18:10:23.617723 2021] [authz_core:error] [pid 716] [client 127.0.0.1:56178] AH01630: client denied by server configuration: /mnt/c/www/pelqueria, referer: http://app.peluqueria.local/

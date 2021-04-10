@@ -17,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::post('pedirvez','VecesController@pedirvez');
+Route::group(['middleware' => ['cors']], function () {
+    Route::post('pedirvez','VecesController@pedirvez');
+});
