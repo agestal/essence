@@ -36,7 +36,7 @@ class VecesController extends Controller
         $v->ip = Veces::verip();
         $v->gestionada = false;
         $v->save();
-        return redirect()->route('/');
+        return 200;
     }
     public function siguiente(Request $request)
     {
