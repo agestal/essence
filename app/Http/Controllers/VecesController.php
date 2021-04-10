@@ -25,8 +25,6 @@ class VecesController extends Controller
         $postdata = file_get_contents("php://input");
         if (isset($postdata)) {
          $request = json_decode($postdata);
-         $request->recibido = 'OK';
-         echo json_encode($request);
         }
         $nombre=$request->nombre;
         $tlf = $request->tlf;
