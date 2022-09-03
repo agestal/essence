@@ -13,7 +13,7 @@ return [
         'status_bar'=> 'black',
         'icons' => [
             '72x72' => [
-                'path' => '/images/icons/icon-72x72.png',
+                'path' => '/images/icons/logo.png',
                 'purpose' => 'any'
             ],
             '96x96' => [
