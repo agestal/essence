@@ -23,3 +23,5 @@ Route::get('logout', 'Auth\LoginController@logout');
 
 
 
+
+\PWA::routes();
