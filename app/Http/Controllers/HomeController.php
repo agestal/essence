@@ -29,4 +29,8 @@ class HomeController extends Controller
     {
         return view('vez');
     }
+    public function wellcome()
+    {
+        return view('welcome');
+    }
 }
