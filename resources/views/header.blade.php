@@ -41,4 +41,3 @@
   }
     </script>
   </head>
-  <input type="button" id="buttonAdd" />

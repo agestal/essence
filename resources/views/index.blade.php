@@ -15,6 +15,8 @@
                 
                 </p>
                 <a href="{{url('vez')}}" class="u-btn u-button-style u-palette-4-base u-btn-2">Pedir Vez!</a>
+
+                <a href="#" class="u-btn u-button-style u-palette-4-base u-btn-2" id="buttonAdd" > Descarga Nuestra APP! </a>
               </div>
             </div>
           </div>
