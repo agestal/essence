@@ -49,16 +49,16 @@ class VecesController extends Controller
             $vez = Veces::findOrFail($siguiente->id);
             $vez->gestionada = true;
             $vez->save();
-            return view('admin.siguiente',compact('siguiente'));
+            return view('admin.veces.siguiente',compact('siguiente'));
         }
-        else 
+        else
         {
             return 0;
         }
     }
     public function whatsapp($id)
     {
-        
+
     }
     public function siguiente_debug()
     {
@@ -71,9 +71,9 @@ class VecesController extends Controller
             $vez = Veces::findOrFail($siguiente->id);
             $vez->gestionada = true;
             $vez->save();
-            return view('admin.siguiente',compact('siguiente'));
+            return view('admin.veces.siguiente',compact('siguiente'));
         }
-        else 
+        else
         {
             return 0;
         }

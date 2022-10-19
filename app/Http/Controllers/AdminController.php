@@ -23,6 +23,6 @@ class AdminController extends Controller
     public function veces_pendientes()
     {
         $veces = Veces::where('gestionada',false)->orderBy('created_at','ASC')->get();
-        return view('admin.pendientes',compact('veces'));
+        return view('admin.veces.pendientes',compact('veces'));
     }
 }
