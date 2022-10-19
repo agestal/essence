@@ -40,7 +40,7 @@ class VentasController extends Controller
     public function contenido($id)
     {
         $servicios = DB::table('servicios')->get();
-        return view($this->path.'.)
+        return view($this->path);
     }
     public function delete(Request $request)
     {
