@@ -7,6 +7,10 @@ use DB;
 
 class ClientesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public $path = 'admin.clientes';
     public function index()
     {

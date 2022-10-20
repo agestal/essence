@@ -6,12 +6,41 @@
     <div class="sidebar">
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon fas fa-tachometer-alt"></i><p>Veces<i class="right fas fa-angle-left"></i></p></a>
-            <ul class="nav nav-treeview">
-                <li class="nav-item"><a href="{{ url('admin/pendientes') }}" class="nav-link"><i class="far fa-circle nav-icon"></i><p>Listar v1</p></a></li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-circle nav-icon"></i><p>Insertar vez</p></a></li>
-            </ul>
-          </li>
+            <li class="nav-item"><a href="#" class="nav-link"><p>Categorias<i class="right fas fa-angle-left"></i></p></a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item"><a href="{{ url('admin/categorias') }}" class="nav-link"><p>Lista</p></a></li>
+                    <li class="nav-item"><a href="{{ url('admin/categorias/create') }}" class="nav-link"><p>Nueva</p></a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link"><p>Servicios<i class="right fas fa-angle-left"></i></p></a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item"><a href="{{ url('admin/servicios') }}" class="nav-link"><p>Lista</p></a></li>
+                    <li class="nav-item"><a href="{{ url('admin/servicios/create') }}" class="nav-link"><p>Nuevo</p></a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link"><p>Clientes<i class="right fas fa-angle-left"></i></p></a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item"><a href="{{ url('admin/clientes') }}" class="nav-link"><p>Lista</p></a></li>
+                    <li class="nav-item"><a href="{{ url('admin/clientes/create') }}" class="nav-link"><p>Nuevo</p></a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link"><p>Ventas<i class="right fas fa-angle-left"></i></p></a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item"><a href="{{ url('admin/ventas') }}" class="nav-link"><p>Lista</p></a></li>
+                    <li class="nav-item"><a href="{{ url('admin/ventas/create') }}" class="nav-link"><p>Nueva</p></a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link"><p>Veces<i class="right fas fa-angle-left"></i></p></a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item"><a href="{{ url('admin/pendientes') }}" class="nav-link"><p>Lista</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><p>Insertar vez</p></a></li>
+                </ul>
+            </li>
+
         </ul>
       </nav>
     </div>

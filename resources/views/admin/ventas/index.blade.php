@@ -4,7 +4,7 @@
 <script>
     $(document).ready(function() {
         $(".eliminar").on('click', function() {
-            var confirm = confirm("Seguro que quieres eliminar la venta por compelto?");
+            var confirm = window.confirm("Seguro que quieres eliminar la venta por compelto?");
             if ( confirm )
             {
                 var id = $(this).attr('id');
@@ -56,12 +56,15 @@
                   <tbody>
                   @foreach ( $datos as $d )
                     <tr>
-                      <td> {{ $d->nombre }} </td>
-                      <td> {{ $d->fecha }} </td>
-                      <td> {{ $d->total }} </td>
-                      <td> {{ $d->tiempo }} </td>
-
-                      <td> <input type="button" class="btn btn-danger eliminar" value="ELIMINAR" id="{{$d->id}}" /> </td>
+                        @if ( $d->nombre == null )
+                        <td> Anonimo </td>
+                        @else
+                        <td> {{ $d->nombre }} </td>
+                        @endif
+                        <td> {{ $d->fecha }} </td>
+                        <td> {{ $d->total }} </td>
+                        <td> {{ $d->tiempo }} </td>
+                        <td> <input type="button" class="btn btn-danger eliminar" value="ELIMINAR" id="{{$d->id}}" /> </td>
                     </tr>
                   @endforeach
                   </tbody>

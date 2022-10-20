@@ -6,17 +6,23 @@ use Illuminate\Http\Request;
 use DB;
 use App\Models\Ventas;
 use App\Models\VentasContenido;
+use App\Models\Servicios;
+use Illuminate\Support\Facades\Auth;
 
 class VentasController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public $path = 'admin.ventas';
     public function index()
     {
         $sql = "SELECT v.id,v.fecha,c.nombre,sum(vc.precio) AS total,sum(vc.duracion) AS tiempo
                 FROM ventas AS v
-                INNER JOIN clientes AS c
+                LEFT JOIN clientes AS c
                 ON v.id_cliente=c.id
-                INNER JOIN ventas_contenido AS vc
+                LEFT JOIN ventas_contenido AS vc
                 ON vc.id_venta=v.id
                 GROUP BY v.id,v.fecha,c.nombre";
         $datos = DB::select($sql);
@@ -37,10 +43,37 @@ class VentasController extends Controller
         $s->save();
         return $s->id;
     }
+
+    public function store_contenido(Request $request)
+    {
+        $servicios = $request->servicios;
+        $id = $request->venta;
+        foreach ( $servicios as $s )
+        {
+            $sv = Servicios::findOrFail($s);
+            $vc = new VentasContenido();
+            $vc->id_venta = $id;
+            $vc->id_servicio = $s;
+            $vc->precio = $sv->precio;
+            $vc->duracion = $sv->duracion;
+            $vc->save();
+        }
+        return 1;
+    }
     public function contenido($id)
     {
+        $venta = DB::table('ventas')->where('id',$id)->first();
+        $cliente = DB::table('clientes')->where('id',$venta->id_cliente)->first();
         $servicios = DB::table('servicios')->get();
-        return view($this->path);
+        $lineas = DB::table('ventas_contenido AS vc')->join('servicios AS s','s.id','vc.id_servicio')->where('id_venta',$venta->id)->select('vc.*','s.nombre')->get();
+        $duracion = 0;
+        foreach ( $lineas as $l )
+        {
+            $time = date("H",strtotime($l->duracion))*60+date("i",strtotime($l->duracion));
+            $duracion += $time;
+        }
+        $precio = $lineas->sum('precio');
+        return view($this->path.'.contenido',compact('servicios','venta','cliente','lineas','precio','duracion'));
     }
     public function delete(Request $request)
     {
@@ -51,6 +84,12 @@ class VentasController extends Controller
             $vc->delete();
         }
         $v = Ventas::findOrFail($request->id);
+        $v->delete();
+        return 1;
+    }
+    public function delete_contenido(Request $request)
+    {
+        $v = VentasContenido::findOrFail($request->id);
         $v->delete();
         return 1;
     }

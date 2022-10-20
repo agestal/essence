@@ -8,6 +8,10 @@ use App\Models\Categorias;
 
 class CategoriasController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public $path = 'admin.categorias';
     public function index()
     {

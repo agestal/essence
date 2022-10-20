@@ -16,7 +16,7 @@
                 if (data)
                 {
                     alert("Venta creada correctamente!");
-                    var url = "{{ url('admin/ventas/contenido')";
+                    var url = "{{ url('admin/ventas/contenido') }}";
                     location.href = url+"/"+data;
                 }
             });
@@ -28,7 +28,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Categoria Nueva</h1>
+            <h1 class="m-0">Nueva Venta</h1>
           </div>
         </div>
       </div>
@@ -46,6 +46,7 @@
                         <div class="form-group">
                             <label> Cliente </label>
                             <select class="form-control" id="cliente">
+                                <option value="0"> Anónimo </option>
                                 @foreach ( $clientes as $c )
                                     <option value="{{$c->id}}"> {{ $c->nombre }} {{ $c->apellido1 }} {{ $c->apellido2 }} </option>
                                 @endforeach
@@ -57,7 +58,7 @@
                             });
                         </script>
                         <div class="form-group">
-                            <input type="button" class="btn btn-success" id="guardar" value="GUARDAR" />
+                            <input type="button" class="btn btn-success" id="guardar" value="NUEVA VENTA" />
                         </div>
                     </div>
                 </div>

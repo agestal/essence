@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Middleware\Login;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,13 +44,13 @@ Route::prefix('admin')->group(function() {
     Route::prefix('ventas')->group(function() {
         Route::get('/','VentasController@index');
         Route::get('create','VentasController@create');
+        Route::get('contenido/{id?}','VentasController@contenido');
         Route::post('store','VentasController@store');
+        Route::post('store_contenido','VentasController@store_contenido');
         Route::post('delete','VentasController@delete');
+        Route::post('delete_contenido','VentasController@delete_contenido');
     });
 });
+
 Route::get('logout', 'Auth\LoginController@logout');
-
-
-
-
 \PWA::routes();

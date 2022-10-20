@@ -8,6 +8,10 @@ use App\Models\Servicios;
 
 class ServiciosController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public $path = 'admin.servicios';
     public function index()
     {
