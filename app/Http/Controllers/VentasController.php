@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use DB;
 use App\Models\Ventas;
@@ -91,6 +89,13 @@ class VentasController extends Controller
     {
         $v = VentasContenido::findOrFail($request->id);
         $v->delete();
+        return 1;
+    }
+    public function update_contenido(Request $request)
+    {
+        $vc = VentasContenido::findOrFail($request->id);
+        $vc->precio = $request->precio;
+        $vc->save();
         return 1;
     }
 }

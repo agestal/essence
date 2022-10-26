@@ -20,6 +20,19 @@
                 }
             });
         });
+        $("#guardar").on('click', function() {
+            $(".precio").each(function() {
+                var precio = $(this).val();
+                var id = $(this).attr('id');
+                $.ajax({
+                    method: "POST",
+                    headers: {"X-CSRF-TOKEN": "{{ csrf_token(); }}" },
+                    url: "{{ url('/admin/ventas/update_contenido')}}",
+                    data: { id:id, precio: precio }
+                })
+            });
+            alert("Cambios guardados correctamente!");
+        });
         $(".delete").on('click', function() {
             var id = $(this).attr('id');
             $.ajax({
@@ -81,6 +94,7 @@
 
                         <div class="form-group">
                             <input type="button" class="btn btn-success" id="asignar" value="ASIGNAR" />
+                            <input type="button" class="btn btn-primary right" id="guardar" value="GUARDAR CAMBIOS" />
                         </div>
 
                         <div class="row">

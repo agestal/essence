@@ -18,8 +18,8 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>{{ $veces }}</h3>
-                <p>Veces pendientes</p>
+                <h3>{{ $ventas }}<sup style="font-size: 20px">€</sup></h3>
+                <p>Ventas de hoy</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -32,8 +32,8 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>{{ $gestiones }}<sup style="font-size: 20px">%</sup></h3>
-                <p>Veces Gestionadas</p>
+                <h3>{{ $ventas_mes }}<sup style="font-size: 20px">€</sup></h3>
+                <p>Ventas mes </p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
@@ -46,8 +46,8 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>{{ $users }}</h3>
-                <p>Usuarios activos</p>
+                <h3>{{ $clientes }}</h3>
+                <p>Clientes activos</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
@@ -60,9 +60,12 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>65</h3>
-
-                <p>Abandonos</p>
+                @if ( $dias > 0 )
+                <h3>{{ $ventas_mes/$dias }}€</h3>
+                @else
+                <h3> 0 € </h3>
+                @endif
+                <p>€€/Día</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>

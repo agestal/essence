@@ -49,6 +49,7 @@ Route::prefix('admin')->group(function() {
         Route::post('store_contenido','VentasController@store_contenido');
         Route::post('delete','VentasController@delete');
         Route::post('delete_contenido','VentasController@delete_contenido');
+        Route::post('update_contenido','VentasController@update_contenido');
     });
 });
 
