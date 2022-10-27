@@ -16,7 +16,7 @@ use App\Http\Middleware\Login;
 Route::get('/','HomeController@index');
 Route::get('/wc','HomeController@wellcome');
 Route::get('vez','HomeController@pedirvez');
-Route::post('pedirvez','VecesController@pedirvez');
+Route::post('vez/pedir_vez','VecesController@pedir_vez');
 Auth::routes(['register' => false]);
 
 Route::prefix('admin')->group(function() {

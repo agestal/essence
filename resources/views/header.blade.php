@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
-
-
     <title>Essence Salones Low Cost - Redondela </title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="stylesheet" href="Page-2.css" media="screen">
@@ -22,12 +20,10 @@
                 // Stash the event so it can be triggered later.
                 deferredPrompt = e;
             });
-
             // Installation must be done by a user gesture! Here, the button click
             buttonAdd.addEventListener('click', (e) => {
             // hide our user interface that shows our A2HS button
             // Show the prompt+
-            e.preventDefault();
             deferredPrompt.prompt();
             // Wait for the user to respond to the prompt
             deferredPrompt.userChoice

@@ -36,7 +36,7 @@
 
             <li class="nav-item"><a href="#" class="nav-link"><p>Veces<i class="right fas fa-angle-left"></i></p></a>
                 <ul class="nav nav-treeview">
-                    <li class="nav-item"><a href="{{ url('admin/pendientes') }}" class="nav-link"><p>Lista</p></a></li>
+                    <li class="nav-item"><a href="{{ url('admin/veces/pendientes') }}" class="nav-link"><p>Lista</p></a></li>
                 <li class="nav-item"><a href="#" class="nav-link"><p>Insertar vez</p></a></li>
                 </ul>
             </li>

@@ -1,33 +1,5 @@
 @include('header')
 @include('top')
-<script>
-    $(document).ready(function() {
-        $("#vez").on('click', function() {
-            var nombre = $("#nombre").val();
-            var telefono = $("#telefono").val();
-            if ( nombre != "" && telefono != ""  )
-            {
-                $.ajax({
-                    method: "POST",
-                    headers: {"X-CSRF-TOKEN": "{{ csrf_token(); }}" },
-                    url: "{{ url('/vez/pedir_vez')}}",
-                    data: { nombre:nombre, telefono: telefono }
-                })
-                .done(function(data)
-                {
-                    if (data)
-                    {
-                        location.reload();
-                    }
-                });
-            }
-            else
-            {
-                alert("Debes rellenar todos los datos para pedir vez!");
-            }
-        });
-    });
-    </script>
 <section class="u-clearfix u-image u-shading u-section-8">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-layout-wrap u-layout-wrap-1">

@@ -6,11 +6,11 @@ use DB;
 use Session;
 class VecesController extends Controller
 {
-    public function pedirvez(Request $request)
+    public function pedir_vez(Request $request)
     {
         $nombre=$request->nombre;
-        $tlf = $request->tlf;
-        $mail = $request->email;
+        $tlf = $request->telefono;
+        $mail = "";
         $v = new Veces();
         $v->nombre = $nombre;
         $v->tlf = $tlf;
@@ -18,7 +18,7 @@ class VecesController extends Controller
         $v->ip = Veces::verip();
         $v->gestionada = false;
         $v->save();
-        return redirect()->route('/');
+        return 1;
     }
     public function pedirvezapi(Request $request)
     {

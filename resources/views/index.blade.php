@@ -5,18 +5,20 @@
         <div class="u-layout">
           <div class="u-layout-row">
             <div class="u-container-style u-image u-layout-cell u-left-cell u-size-32 u-image-1">
-              <div class="u-container-layout"></div>
+              <div class="u-container-layout">
+
+              </div>
             </div>
             <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-28 u-image-2">
               <div class="u-container-layout u-valign-top u-container-layout-2">
                 <h5 class="u-custom-font u-text u-text-font u-text-1">Salon de Belleza</h5>
                 <h1 class="u-text u-title u-text-2">Essence</h1>
                 <p class="u-large-text u-text u-text-variant u-text-3">Deja que nosotros te cuidemos, estarás en buenas manos.</p>
-                
+
                 </p>
                 <a href="{{url('vez')}}" class="u-btn u-button-style u-palette-4-base u-btn-2">Pedir Vez!</a>
+                <a href="{{url('citas')}}" class="u-btn u-button-style u-palette-4-base u-btn-2">Pedir Cita!</a>
 
-                <a href="#" class="u-btn u-button-style u-palette-4-base u-btn-2" id="buttonAdd" > Descarga Nuestra APP! </a>
               </div>
             </div>
           </div>
@@ -106,6 +108,7 @@
         </div>
       </div>
     </section>
+    <!--
     <section class="u-clearfix u-section-4" id="carousel_58f4">
       <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
         <div class="u-layout">
@@ -200,5 +203,5 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>->
 @include('footer');
