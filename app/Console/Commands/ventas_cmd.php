@@ -40,7 +40,7 @@ class ventas_cmd extends Command
      */
     public function handle()
     {
-        $clientes = DB::table('clientes')->where('nombre','Ventas en B')->first();
+        /*$clientes = DB::table('clientes')->where('nombre','Ventas en B')->first();
         $idc = $clientes->id;
         $ventas = DB::table('ventas')->get();
         foreach ( $ventas as $v )
@@ -84,7 +84,7 @@ class ventas_cmd extends Command
         $vc2->precio = 194;
         $vc2->created_at = '2022-11-03 16:00:00';
         $vc2->updated_at = '2022-11-03 16:00:00';
-        $vc2->save();
+        $vc2->save();*/
 
     }
 }
