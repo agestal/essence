@@ -5,19 +5,21 @@
     $(document).ready(function() {
         $("#guardar").on('click', function() {
             var nombre = $("#nombre").val();
-            var estetica = $("#estetica").val();
-            var cita = $("#cita").val();
+            var ape1 = $("#ape1").val();
+            var ape2 = $("#ape2").val();
+            var mail = $("#email").val();
+            var tlf = $("#tlf").val();
             $.ajax({
                 method: "POST",
                 headers: {"X-CSRF-TOKEN": "{{ csrf_token(); }}" },
-                url: "{{ url('/admin/categorias/store')}}",
-                data: { nombre: nombre, cita: cita, estetica: estetica }
+                url: "{{ url('/admin/clientes/store')}}",
+                data: { nombre: nombre, ape1: ape1, ape2: ape2, email: mail, tlf: tlf }
             })
             .done(function(data)
             {
                 if (data)
                 {
-                    alert("Categoria creada correctamente!");
+                    alert("Cliente creado correctamente!");
                 }
             });
         });
@@ -28,7 +30,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Categoria Nueva</h1>
+            <h1 class="m-0">Cliente Nuevo</h1>
           </div>
         </div>
       </div>
@@ -48,18 +50,20 @@
                             <input type="text" class="form-control" id="nombre" />
                         </div>
                         <div class="form-group">
-                            <label> Estetica </label>
-                            <select class="form-control" id="estetica">
-                                <option value="0"> NO </option>
-                                <option value="1"> SI </option>
-                            </select>
+                            <label> Appelido 1 </label>
+                            <input type="text" class="form-control" id="ape1" />
                         </div>
                         <div class="form-group">
-                            <label> Permite Cita Previa? </label>
-                            <select class="form-control" id="cita">
-                                <option value="0"> NO </option>
-                                <option value="1"> SI </option>
-                            </select>
+                            <label> Appelido 1  </label>
+                            <input type="text" class="form-control" id="ape2" />
+                        </div>
+                        <div class="form-group">
+                            <label> Email </label>
+                            <input type="text" class="form-control" id="email" />
+                        </div>
+                        <div class="form-group">
+                            <label> Tlf </label>
+                            <input type="text" class="form-control" id="tlf" />
                         </div>
                         <div class="form-group">
                             <input type="button" class="btn btn-success" id="guardar" value="GUARDAR" />

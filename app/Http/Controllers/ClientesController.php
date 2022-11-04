@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\Models\Clientes;
 
 class ClientesController extends Controller
 {
@@ -25,8 +26,10 @@ class ClientesController extends Controller
     {
         $s = new clientes();
         $s->nombre = $request->nombre;
-        $s->estetica = $request->estetica;
-        $s->cita_previa = $request->cita;
+        $s->apellido1 = $request->ape1;
+        $s->apellido2 = $request->ape2;
+        $s->email = $request->email;
+        $s->movil = $request->tlf;
         $s->save();
         return 1;
     }
