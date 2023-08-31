@@ -45,7 +45,3 @@
         </nav>
       </div>
 </header>
-<script>
-var detector = new MobileDetect(window.navigator.userAgent);
-alert(detector.phone());
-</script>
